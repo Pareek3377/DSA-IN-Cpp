@@ -1,0 +1,53 @@
+
+"""adult program
+#include<iostream>
+using namespace std;
+int main(){
+    int age;
+    cout<<"What is your age?: ";
+    cin>>age;
+
+    if(age>=18){
+        cout<<"You are an adult";
+    }
+    else{
+        cout<<"You are not an adult";
+    }
+    return 0;
+}
+"""
+"""grade program:
+#include<iostream>
+using namespace std;
+
+int main(){
+    int marks;
+    char Grade;
+    
+    cout<<"what are your marks?";
+    cin>>marks;
+    if(marks<25){
+        Grade='F';
+    }
+    else if( marks<=44){
+        Grade='E';
+    }
+    else if(marks<= 49){
+        Grade = 'D';
+    }
+    else if(marks<= 59){
+        Grade='C';
+    }
+    else if(marks<=69){
+        Grade='B';
+    }
+    else if(marks>=70){
+        Grade = 'A';
+    }else{
+        Grade = 'X';
+    }
+    cout<<"Grade: "<<Grade<<endl;
+
+    return 0;
+}
+"""
