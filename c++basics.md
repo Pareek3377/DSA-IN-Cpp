@@ -79,3 +79,22 @@ Make your changes and commit them (git commit -m 'Add new feature')
 Push to your branch (git push origin feature-branch)
 
 Open a Pull Request
+
+if-else statements are like the Swiss Army knife of decision-making. They offer flexibility and can handle a wide range of conditions and branching logic. You can use them when you need to evaluate complex conditions or when conditions aren't based on simple equality checks. If-else statements are often the preferred choice for scenarios where the conditions are not easily enumerable or where you need to execute different blocks of code based on various conditions.
+On the other hand, switch statements shine when you have a single variable to compare against multiple distinct values. They are concise, making the code cleaner and more structured. So, if-else statements and switch statements can complement each other, with if-else statements handling complex conditions and switch statements simplifying cases with multiple exact matches.
+
+The ‘Switch’ Statement
+Key Considerations for Switch Case Statements:
+
+Requirement for a Constant Expression
+A switch statement necessitates that its expression results in a constant value. This can include constants and arithmetic operations.
+Limited to Integer or Character Types
+Switch statements are exclusively designed to handle integer or character values. Ensure that the expression provides values of type int or char.
+Significance of the 'Break' Keyword
+The 'break' keyword holds significant importance within switch cases. It serves as an exit mechanism from the switch statement. Its omission implies the execution of all subsequent cases.
+Optional Default Case
+Optionally, you can include a 'default' case, which executes when none of the case values match. It's not obligatory and can be excluded if not needed.
+Prohibition of Duplicate Case Values
+Within a switch statement in C++, duplicates of case values are disallowed. Each case value must be distinct.
+Potential for Nested Switch Statements
+While it's possible to nest one switch statement inside another in C++, this practice is generally discouraged due to its potential to introduce complexity and hinder code readability.
