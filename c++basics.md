@@ -98,3 +98,27 @@ Prohibition of Duplicate Case Values
 Within a switch statement in C++, duplicates of case values are disallowed. Each case value must be distinct.
 Potential for Nested Switch Statements
 While it's possible to nest one switch statement inside another in C++, this practice is generally discouraged due to its potential to introduce complexity and hinder code readability.
+
+What is a For Loop and Why is it Used?
+
+A for loop is a control structure in programming that allows you to execute a specific block of code repeatedly. It's especially useful when you want to perform the same task multiple times without duplicating your code. Let's break down the essential components of a for loop:
+
+Initialization: You declare and initialize a variable that serves as a counter. This step only happens once at the beginning.
+Condition: You specify a condition that determines when the loop should stop executing.
+Increment/Decrement: You define how the counter variable changes after each iteration.
+
+WHILE LOOP 
+In the world of computer programming, loops are invaluable tools that allow us to execute a block of code repeatedly until a certain condition is met. One such loop is the "while" loop.
+
+A while loop follows a simple sequence of steps:
+
+Evaluation of Test Expression: The loop begins by evaluating a test expression.
+Condition Check: If the test expression is true, the code inside the loop's body is executed.
+Re-evaluation: After executing the code, the test expression is evaluated again.
+Continuation or Termination: This process continues until the test expression becomes false, at which point the while loop terminates.
+
+Syntax
+
+while (condition) {
+    // body of the loop
+}
