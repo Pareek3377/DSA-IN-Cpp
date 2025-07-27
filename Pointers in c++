@@ -82,3 +82,26 @@ int main(){
 
   
 }
+
+//DOUBLE POINTERS:
+
+#include<iostream>
+using namespace std;
+
+int main(){
+    int i=5;
+    int *p=&i;
+    int**p2=&p;
+     
+    cout<< endl << endl<< "sab sahi chlra hai"<<endl<<endl;
+    
+    cout<<" Printing p"<<p<<endl;
+    //cout<<"address of p is :"<<&p<<endl;
+    cout<< *p2<<endl;
+
+    cout<<i<<endl;
+    cout<<*p<<endl;
+    cout<<**p2<<endl;
+    return 0;
+}
+
