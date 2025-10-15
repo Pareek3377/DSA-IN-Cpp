@@ -21,7 +21,7 @@ int main(){
 }
 
 
-//CREATING A SINGLY LINKEDLIST
+//INSERTING  A NODE
 #include<iostream>
 using namespace std;
 
@@ -42,6 +42,12 @@ void insertAtHead(Node* &head,int d){
     temp->next=head;
     head=temp;
 } 
+void insertAtTail(Node* &tail,int d){
+    //new node creation
+    Node* temp=new Node(d);
+    tail->next=temp;
+    tail=tail->next;
+}
 void print(Node* &head){
     Node* temp=head;
 
@@ -59,11 +65,12 @@ int main(){
 
     //head pointed to node1
     Node* head=node1;
+    Node* tail=node1;
     print(head);
 
     insertAtHead(head,12);
     print(head);
-    insertAtHead(head,15);
+    insertAtTail(tail,15);
     print(head);
     return 0;
 }
