@@ -21,7 +21,7 @@ int main(){
 }
 
 
-//INSERTING  A NODE
+//INSERTING  A NODE ALL TYPES
 #include<iostream>
 using namespace std;
 
@@ -42,6 +42,26 @@ void insertAtHead(Node* &head,int d){
     temp->next=head;
     head=temp;
 } 
+void insertAtPos(Node* &head,int position,int d){
+    if(position==1){
+        insertAtHead(head,d);
+        return;
+    }
+    Node* temp=head;
+    int cnt=1;
+
+    while(cnt<position-1){
+        temp=temp->next;
+        cnt++;
+    }
+    //creating a node for d
+    Node* nodeToInsert=new Node(d);
+
+    nodeToInsert->next=temp->next;
+
+    temp->next=nodeToInsert;
+
+}
 void insertAtTail(Node* &tail,int d){
     //new node creation
     Node* temp=new Node(d);
@@ -71,6 +91,10 @@ int main(){
     insertAtHead(head,12);
     print(head);
     insertAtTail(tail,15);
+   
+
+    insertAtPos(head,1,22);
     print(head);
     return 0;
 }
+
